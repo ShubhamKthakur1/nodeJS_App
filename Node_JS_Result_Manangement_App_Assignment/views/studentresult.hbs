@@ -1,0 +1,29 @@
+<a style = "float: right;" href="/" class="btn btn-info" style="margin-top:5px;">Logout</a>
+<div style="height: 50vh; width: 100vw;display: flex;justify-content: center;align-items: center;">
+  <table style="margin-top:5px;padding: 60px 40px;font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;">
+      
+      <tbody>
+        {{#each rows}}
+        <tr>
+            <th style="font-size: 20px;text-align: center;text-transform: capitalize;font-weight: bold;text-decoration: underline;">Result</th>
+        </tr> 
+        <tr>
+          <td><b>Roll : </b></td> 
+          <td>{{this.roll}}</td>
+        </tr>
+        <tr>
+          <td><b>Name : </b></td>
+          <td>{{this.name}}</td>
+        </tr>
+        <tr>
+          <td><b>DOB : </b></td>
+          <td>{{this.dob}}</td>
+        </tr>
+        <tr>
+          <td><b>Score : </b></td>
+          <td>{{this.score}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>    
+</div>
